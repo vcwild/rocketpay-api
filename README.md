@@ -29,3 +29,29 @@ Validate credo
 ```sh
 mix credo gen.config
 ```
+
+### Migrations
+
+Create database
+
+```sh
+mix ecto.create
+```
+
+Create create_user_table migration file
+
+```sh
+mix ecto.gen.migration create_user_table
+```
+
+Create migration
+
+```sh
+mix ecto.migrate
+```
+
+Drop tables
+
+```sh
+mix ecto.drop
+```

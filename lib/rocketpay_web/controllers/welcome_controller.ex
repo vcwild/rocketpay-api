@@ -15,9 +15,9 @@ defmodule RocketpayWeb.WelcomeController do
     |> json(%{message: "Welcome to Rocketpay API. Here is your number #{result}"})
   end
 
-  defp handle_response({:error, reason}, conn) do
+  defp handle_response({:error, result}, conn) do
     conn
     |> put_status(:bad_request)
-    |> json(reason)
+    |> json(result)
   end
 end
