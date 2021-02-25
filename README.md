@@ -38,10 +38,10 @@ Create database
 mix ecto.create
 ```
 
-Create create_user_table migration file
+Create table migration file
 
 ```sh
-mix ecto.gen.migration create_user_table
+mix ecto.gen.migration [table_name]
 ```
 
 Create migration
