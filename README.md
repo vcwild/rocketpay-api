@@ -1,30 +1,41 @@
-Install hex 
+# Rocketpay API
+
+## Project Requirements
+
+- [Requirements file](./mix.exs)
+
+## Add linting
+
+Add credo to defp deps in mix.exs
+{:credo, "~> 1.5", only: [:dev, :test], runtime: false}
+
+## Install Phoenix
 
 ```sh
 mix archive.install hex phx_new 1.5.7\
 ```
 
-new project 
+## Commands
+
+### New Project
 
 ```sh
 mix phx.new [name] --no-webpack --no-html
 ```
 
-Test setup
+### Test setup
 
 ```sh
 mix ecto.setup
 ```
 
-### Add linting
+### Update dependencies
 
-Add credo to defp deps in mix.exs
-{:credo, "~> 1.5", only: [:dev, :test], runtime: false}
-
-Update dependencies
+```sh
 mix deps.get
+```
 
-Validate credo
+### Validate credo
 
 ```sh
 mix credo gen.config
@@ -32,25 +43,25 @@ mix credo gen.config
 
 ### Migrations
 
-Create database
+#### Create database
 
 ```sh
 mix ecto.create
 ```
 
-Create table migration file
+#### Create table migration file
 
 ```sh
 mix ecto.gen.migration [table_name]
 ```
 
-Create migration
+#### Create migration
 
 ```sh
 mix ecto.migrate
 ```
 
-Drop tables
+#### Drop tables
 
 ```sh
 mix ecto.drop
