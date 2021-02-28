@@ -11,6 +11,8 @@ defmodule Rocketpay.Accounts.Transaction do
     withdraw_params = build_params(from_id, value)
     deposit_params = build_params(to_id, value)
 
+    IO.puts("To dentro da transaction")
+
     Multi.new()
     |> Multi.merge(fn _changes -> Operation.call(withdraw_params, :withdraw) end)
     |> Multi.merge(fn _changes -> Operation.call(deposit_params, :deposit) end)
