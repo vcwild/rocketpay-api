@@ -15,7 +15,7 @@ Rocketpay API is a backend banking application interface for bank account creati
 - [API Methods](#API-Methods)
 - [API Endpoints](#API-Endpoints)
 - [Project Requirements](#Project-Requirements)
-- [References](#References)
+- [License](#License)
 
 ## API Methods
 
@@ -90,3 +90,6 @@ docker-compose up -d
 ```sh
 mix archive.install hex phx_new 1.5.7\
 ```
+
+## License
+Distributed under the Apache 2.0 License. See [LICENSE](/LICENSE) for more information.
