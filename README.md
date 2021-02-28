@@ -1,10 +1,9 @@
 <p align="center">
     <img src=".github/rocketpay.png" width="250px" />
     <br/>
-    <img src="https://img.shields.io/github/languages/count/vcwild/rocketpay-api" />
-    <img src="https://img.shields.io/coveralls/github/vcwild/rocketpay-api" />
-    <img src="https://img.shields.io/github/license/vcwild/rocketpay-api" />
-    <img src="https://img.shields.io/github/repo-size/vcwild/rocketpay-api" />
+    <img src="https://img.shields.io/github/languages/count/vcwild/rocketpay-api?color=%2300DE96&style=flat-square" alt="languages" />
+    <img src="https://img.shields.io/github/license/vcwild/rocketpay-api?color=%2300DE96&style=flat-square" alt="license" />
+    <img src="https://img.shields.io/github/repo-size/vcwild/rocketpay-api?color=%2300DE96&style=flat-square" alt="repo size" />
 </p>
 
 # Rocketpay API
@@ -17,7 +16,6 @@ Rocketpay API is a backend banking application interface for bank account creati
 - [API Endpoints](#API-Endpoints)
 - [Project Requirements](#Project-Requirements)
 - [References](#References)
-
 
 ## API Methods
 
@@ -73,6 +71,7 @@ Description:
 }
 ```
 
+n be configured to do so; if you're usi
 ## Project Requirements
 
 - [Mix requirements](./mix.exs)
@@ -91,58 +90,3 @@ docker-compose up -d
 ```sh
 mix archive.install hex phx_new 1.5.7\
 ```
-
-### Commands
-
-#### New Project
-
-```sh
-mix phx.new [name] --no-webpack --no-html
-```
-
-#### Test setup
-
-```sh
-mix ecto.setup
-```
-
-#### Update dependencies
-
-```sh
-mix deps.get
-```
-
-#### Validate credo
-
-```sh
-mix credo gen.config
-```
-
-### Migrations
-
-#### Create database
-
-```sh
-mix ecto.create
-```
-
-#### Create table migration file
-
-```sh
-mix ecto.gen.migration [table_name]
-```
-
-#### Create migration
-
-```sh
-mix ecto.migrate
-```
-
-#### Drop tables
-
-```sh
-mix ecto.drop
-```
-
-## References
-
