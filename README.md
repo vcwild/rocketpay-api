@@ -1,3 +1,12 @@
+<p align="center">
+    <img src=".github/rocketpay.png" width="250px" />
+    <br/>
+    <img src="https://img.shields.io/github/languages/count/vcwild/rocketpay-api" />
+    <img src="https://img.shields.io/coveralls/github/vcwild/rocketpay-api" />
+    <img src="https://img.shields.io/github/license/vcwild/rocketpay-api" />
+    <img src="https://img.shields.io/github/repo-size/vcwild/rocketpay-api" />
+</p>
+
 # Rocketpay API
 
 Rocketpay API is a backend banking application interface for bank account creation and management created with [Phoenix](https://hexdocs.pm/phoenix/Mix.Tasks.Phx.New.html), [Ecto](https://hexdocs.pm/ecto/), and a dockerized [Postgres](https://www.postgresql.org/) database.
